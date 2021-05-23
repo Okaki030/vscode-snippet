@@ -1,0 +1,40 @@
+{
+	"fmt.println": {
+		"prefix": "ff",
+		"body": [
+			"fmt.Println()"
+		]
+	},
+	"pretty.Println": {
+		"prefix": "pp",
+		"body": [
+			"pretty.Println()"
+		]
+	},
+	"if err != nil": {
+		"prefix": "ie",
+		"body": [
+			"if err != nil {",
+            "\t$1",
+            "}"
+		]
+	},
+	"func": {
+		"prefix": "fn",
+		"body": [
+			"func a(hoge int) (int, error) {",
+            "\treturn hoge, nil",
+            "}"
+		]
+	},
+	"main": {
+		"prefix": "main",
+		"body": [
+			"package main",
+			"",
+			"func main()  {",
+			"",
+            "}"
+		]
+	}
+}
